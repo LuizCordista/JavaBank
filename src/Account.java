@@ -17,7 +17,7 @@ public class Account {
     public void withDraw(double amount) {
         if (this.balance >= amount) {
             this.balance -= amount;
-            System.out.println("Your money has been withdrawn");
+            System.out.println("$" + amount + "Has been withdraw with sucess");
         }
         else {
             System.out.println("You don't have this amount");
@@ -26,6 +26,7 @@ public class Account {
 
     public void deposit(double amount) {
         this.balance += amount;
+        System.out.println("You have deposited: $" + amount + "with success!");
     }
 
     public String getStatus() {
